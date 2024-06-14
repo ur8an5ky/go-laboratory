@@ -1,2 +1,1 @@
-# go-laboratory
-test
+# My Go language laboratory
