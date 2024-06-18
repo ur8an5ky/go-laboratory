@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"strings"
+
+	"calculator.com/calculator/operations"
 )
 
 func main() {
@@ -32,8 +34,10 @@ func main() {
 		fmt.Print(val1 * val2)
 	case "4", "4.", "divide":
 		fmt.Print(float32(val1) / float32(val2))
+	// add cases for factorial (how to treat the second value then), arithmetic mean etc.
+	// also add error handling
 	default:
-		fmt.Print("WRONG OPERATION NAME OR TYPE OF NUMBERS!")
+		fmt.Print(operations.Factorial(val1))
 	}
 
 	fmt.Printf("\n")
